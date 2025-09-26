@@ -6,14 +6,6 @@ class WidgetTree extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(centerTitle: true, title: Text("Recepee app")),
-      body: Center(
-        child: Padding(
-          padding: EdgeInsetsGeometry.all(20.0),
-          child: HomePage(),
-        ),
-      ),
-    );
+    return Scaffold(body: HomePage());
   }
 }

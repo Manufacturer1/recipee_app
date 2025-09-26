@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:recipee_app/widgets/category_filter.dart';
+import 'package:recipee_app/widgets/dishes.dart';
+import 'package:recipee_app/widgets/search_recipee.dart';
+import 'package:recipee_app/widgets/welcome.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Column(
+      children: [Welcome(), SearchRecipee(), CategoryFilter(), Dishes()],
+    );
   }
 }
