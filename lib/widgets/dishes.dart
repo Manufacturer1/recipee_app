@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipee_app/data/dish_list.dart';
 import 'package:recipee_app/widgets/food_card.dart';
 
 class Dishes extends StatefulWidget {
@@ -17,11 +18,16 @@ class _DishesState extends State<Dishes> {
         scrollDirection: Axis.horizontal,
         child: Row(
           children: [
-            Foodcard(
-              imageUrl: "assets/dish_1.png",
-              title: "Classic Greek Salad",
-              time: "12sa",
-              rating: 3.4,
+            ...dishes.map(
+              (dish) => Padding(
+                padding: const EdgeInsets.only(right: 10),
+                child: Foodcard(
+                  imageUrl: dish.imageUrl,
+                  title: dish.title,
+                  time: dish.time,
+                  rating: dish.rating,
+                ),
+              ),
             ),
           ],
         ),
