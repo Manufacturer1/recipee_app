@@ -38,7 +38,7 @@ class _CategoryFilterState extends State<CategoryFilter> {
                   vertical: 10,
                 ),
                 decoration: BoxDecoration(
-                  color: isSelected ? Color(0xff129575) : Colors.white,
+                  color: isSelected ? Color(0xff129575) : Colors.transparent,
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Text(

@@ -9,7 +9,7 @@ final List<Dish> dishes = [
   ),
   Dish(
     imageUrl: "assets/dish_2.png",
-    title: "Caesar Salad",
+    title: "Crunchy Nut Coleslaw",
     time: "10 Mins",
     rating: 4.8,
   ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recipee_app/data/dish_list.dart';
+import 'package:recipee_app/data/mochData/dish_list.dart';
 import 'package:recipee_app/widgets/food_card.dart';
 
 class Dishes extends StatefulWidget {
