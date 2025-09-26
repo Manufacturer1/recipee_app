@@ -30,8 +30,8 @@ class _FoodcardState extends State<Foodcard> {
         borderRadius: BorderRadius.circular(12),
         color: const Color(0xffD9D9D9).withAlpha((0.5 * 255).toInt()),
       ),
-      width: 180,
-      height: 195,
+      width: 160,
+      height: 175,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -49,8 +49,8 @@ class _FoodcardState extends State<Foodcard> {
                       child: ClipOval(
                         child: Image.asset(
                           widget.imageUrl,
-                          width: 130,
-                          height: 130,
+                          width: 120,
+                          height: 120,
                           fit: BoxFit.contain,
                         ),
                       ),
