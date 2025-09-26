@@ -45,14 +45,20 @@ class SearchRecipee extends StatelessWidget {
             ),
           ),
 
-          Container(
-            width: 50,
-            height: 50,
-            decoration: BoxDecoration(
-              color: const Color(0xFF129575),
-              borderRadius: BorderRadius.circular(10),
+          TextButton(
+            onPressed: () {
+              // Add your onPressed logic here
+            },
+            style: TextButton.styleFrom(
+              backgroundColor: const Color(0xFF129575),
+              minimumSize: const Size(50, 50),
+              maximumSize: const Size(50, 50),
+              padding: EdgeInsets.zero,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
             ),
-            child: const Icon(Icons.tune, color: Colors.white),
+            child: const Icon(Icons.tune, color: Colors.white, size: 30),
           ),
         ],
       ),
