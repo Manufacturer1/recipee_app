@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:recipee_app/views/widget_tree.dart';
 
 void main() {
@@ -13,8 +14,9 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.teal,
+          seedColor: Colors.white,
           brightness: Brightness.light,
         ),
       ),
