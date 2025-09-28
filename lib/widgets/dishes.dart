@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipee_app/data/mockData/dish_list.dart';
+import 'package:recipee_app/views/pages/recipe_details_page.dart';
 import 'package:recipee_app/widgets/food_card.dart';
 
 class Dishes extends StatefulWidget {
@@ -26,6 +27,14 @@ class _DishesState extends State<Dishes> {
                   title: dish.title,
                   time: dish.time,
                   rating: dish.rating,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => RecipeDetailsPage(),
+                      ),
+                    );
+                  },
                 ),
               ),
             ),
