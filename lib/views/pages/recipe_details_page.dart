@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:recipee_app/widgets/chef_profile.dart';
 import 'package:recipee_app/widgets/hero.dart';
 
 class RecipeDetailsPage extends StatelessWidget {
@@ -33,7 +34,7 @@ class RecipeDetailsPage extends StatelessWidget {
                       style: GoogleFonts.poppins(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
-                        fontSize: 17,
+                        fontSize: 14,
                       ),
                     ),
                   ),
@@ -43,12 +44,13 @@ class RecipeDetailsPage extends StatelessWidget {
                     style: TextStyle(
                       color: Color(0xffA9A9A9),
                       fontWeight: FontWeight.w400,
-                      fontSize: 17,
+                      fontSize: 14,
                     ),
                   ),
                 ],
               ),
             ),
+            ChefProfile(),
           ],
         ),
       ),
