@@ -50,9 +50,11 @@ class IngredientCardWrapper extends StatelessWidget {
             ],
           ),
           SizedBox(height: 30),
-          SingleChildScrollView(
-            scrollDirection: Axis.vertical,
-            child: Column(children: [IngredientCard()]),
+          SizedBox(
+            height: 400, // or MediaQuery.of(context).size.height * 0.4
+            child: SingleChildScrollView(
+              child: Column(children: const [IngredientCard()]),
+            ),
           ),
         ],
       ),
