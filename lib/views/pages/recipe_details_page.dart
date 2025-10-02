@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:recipee_app/widgets/chef_profile.dart';
 import 'package:recipee_app/widgets/hero.dart';
+import 'package:recipee_app/widgets/ingredient_card_wrapper.dart';
+import 'package:recipee_app/widgets/procedure_section.dart';
 
 class RecipeDetailsPage extends StatelessWidget {
   const RecipeDetailsPage({super.key});
@@ -34,23 +36,25 @@ class RecipeDetailsPage extends StatelessWidget {
                       style: GoogleFonts.poppins(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
-                        fontSize: 14,
+                        fontSize: 15,
                       ),
                     ),
                   ),
-                  SizedBox(width: 10),
+
                   Text(
                     "(13k Reviews)",
                     style: TextStyle(
                       color: Color(0xffA9A9A9),
                       fontWeight: FontWeight.w400,
-                      fontSize: 14,
+                      fontSize: 15,
                     ),
                   ),
                 ],
               ),
             ),
             ChefProfile(),
+            ProcedureSection(),
+            IngredientCardWrapper(),
           ],
         ),
       ),

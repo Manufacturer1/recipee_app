@@ -34,6 +34,7 @@ class ChefProfile extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
+                  SizedBox(height: 3),
                   Row(
                     children: [
                       Transform.translate(
