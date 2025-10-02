@@ -6,8 +6,9 @@ class ProcedureSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double margin = MediaQuery.of(context).size.width;
     return Padding(
-      padding: EdgeInsets.only(left: 30, right: 30, top: 5, bottom: 40),
+      padding: EdgeInsets.only(left: 30, right: 30, top: 5, bottom: 30),
       child: Row(
         children: [
           CustomElevatedButton(
@@ -18,7 +19,7 @@ class ProcedureSection extends StatelessWidget {
             yPadding: 8,
             fontSize: 13,
           ),
-          SizedBox(width: 80),
+          SizedBox(width: margin * 0.1),
           Text(
             "Procedure",
             style: TextStyle(

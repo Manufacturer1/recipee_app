@@ -24,22 +24,22 @@ class _HeroWidgetState extends State<HeroWidget> {
               "assets/hero.png",
               fit: BoxFit.cover,
               width: double.infinity,
-              height: 160,
+              height: 150,
             ),
             Container(
               width: double.infinity,
-              height: 160,
+              height: 150,
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [Colors.transparent, Color.fromRGBO(0, 0, 0, 0.9)],
-                  stops: [0.1, 1.0],
+                  colors: [Colors.transparent, Color.fromRGBO(0, 0, 0, 0.7)],
+                  stops: [0.3, 1.0],
                 ),
               ),
             ),
             SizedBox(
-              height: 160,
+              height: 150,
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Column(
@@ -53,14 +53,14 @@ class _HeroWidgetState extends State<HeroWidget> {
                         Icon(
                           Icons.access_time,
                           color: Color(0xffD9D9D9),
-                          size: 20,
+                          size: 15,
                         ),
                         SizedBox(width: 5),
                         Text(
                           "20 min",
                           style: TextStyle(
                             color: Color(0xffD9D9D9),
-                            fontSize: 14,
+                            fontSize: 11,
                           ),
                         ),
                         SizedBox(width: 10),

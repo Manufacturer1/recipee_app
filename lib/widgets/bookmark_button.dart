@@ -15,8 +15,8 @@ class _BookmarkButtonState extends State<BookmarkButton> {
     return GestureDetector(
       onTap: widget.onTap,
       child: Container(
-        width: 35,
-        height: 35,
+        width: 25,
+        height: 25,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(20),
@@ -24,8 +24,8 @@ class _BookmarkButtonState extends State<BookmarkButton> {
         child: Center(
           child: Image.asset(
             "assets/Union.png",
-            width: 16,
-            height: 16,
+            width: 15,
+            height: 15,
             fit: BoxFit.contain,
             color: widget.isBookmarked ? Color(0xff71B1A1) : Color(0xffA9A9A9),
           ),

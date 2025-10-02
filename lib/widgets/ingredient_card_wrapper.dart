@@ -8,6 +8,7 @@ class IngredientCardWrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double ingredients_height = MediaQuery.of(context).size.height;
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 30, vertical: 0),
       child: Column(
@@ -40,7 +41,7 @@ class IngredientCardWrapper extends StatelessWidget {
                 ],
               ),
               Text(
-                "10 Items",
+                "${ingredients.length} Items",
                 style: TextStyle(
                   color: Color(0xffA9A9A9),
                   fontSize: 13,
@@ -49,9 +50,11 @@ class IngredientCardWrapper extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 30),
+          SizedBox(height: 25),
           SizedBox(
-            height: 380, // or MediaQuery.of(context).size.height * 0.4
+            height:
+                ingredients_height *
+                0.34, // or MediaQuery.of(context).size.height * 0.4
             child: SingleChildScrollView(
               child: Column(
                 children: [

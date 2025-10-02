@@ -36,17 +36,17 @@ class RecipeDetailsPage extends StatelessWidget {
                       style: GoogleFonts.poppins(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,
-                        fontSize: 15,
+                        fontSize: 14,
                       ),
                     ),
                   ),
-
+                  SizedBox(width: 3),
                   Text(
                     "(13k Reviews)",
                     style: TextStyle(
                       color: Color(0xffA9A9A9),
                       fontWeight: FontWeight.w400,
-                      fontSize: 15,
+                      fontSize: 14,
                     ),
                   ),
                 ],
