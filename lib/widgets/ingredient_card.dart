@@ -2,7 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:recipee_app/widgets/ingredient_image_wrapper.dart';
 
 class IngredientCard extends StatelessWidget {
-  const IngredientCard({super.key});
+  final String ingredientImageName;
+  final String ingredientName;
+  final String quantity;
+
+  const IngredientCard({
+    super.key,
+    required this.ingredientImageName,
+    required this.ingredientName,
+    required this.quantity,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +29,10 @@ class IngredientCard extends StatelessWidget {
         children: [
           Row(
             children: [
-              IngredientImageWrapper(imageName: "assets/tomatoes.png"),
+              IngredientImageWrapper(imageName: ingredientImageName),
               SizedBox(width: 10),
               Text(
-                "Tomatos",
+                ingredientName,
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
@@ -33,7 +42,7 @@ class IngredientCard extends StatelessWidget {
             ],
           ),
           Text(
-            "500g",
+            "$quantity g",
             style: TextStyle(
               color: Color(0xffA9A9A9),
               fontSize: 14,

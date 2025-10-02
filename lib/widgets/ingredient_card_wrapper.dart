@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:recipee_app/data/mockData/ingredient_list.dart';
 import 'package:recipee_app/widgets/ingredient_card.dart';
 
 class IngredientCardWrapper extends StatelessWidget {
@@ -51,9 +51,22 @@ class IngredientCardWrapper extends StatelessWidget {
           ),
           SizedBox(height: 30),
           SizedBox(
-            height: 400, // or MediaQuery.of(context).size.height * 0.4
+            height: 380, // or MediaQuery.of(context).size.height * 0.4
             child: SingleChildScrollView(
-              child: Column(children: const [IngredientCard()]),
+              child: Column(
+                children: [
+                  ...ingredients.map(
+                    (ingredient) => Padding(
+                      padding: const EdgeInsets.only(bottom: 10),
+                      child: IngredientCard(
+                        ingredientImageName: ingredient.imageName,
+                        ingredientName: ingredient.ingredientName,
+                        quantity: ingredient.quantity,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
