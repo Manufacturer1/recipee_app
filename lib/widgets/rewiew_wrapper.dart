@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipee_app/data/mockData/review_list.dart';
+import 'package:recipee_app/views/pages/recipe_details_page.dart';
 import 'package:recipee_app/widgets/review.dart';
 
 class ReviewWrapper extends StatefulWidget {
@@ -42,6 +43,14 @@ class _ReviewWrapperState extends State<ReviewWrapper> {
                       time: review.time,
                       reviewerIcon: review.reviewerIcon,
                       reviewerName: review.reviewerName,
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => RecipeDetailsPage(),
+                          ),
+                        );
+                      },
                     ),
                   ),
                 ),
